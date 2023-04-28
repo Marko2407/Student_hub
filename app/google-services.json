@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "469997125718",
+    "project_id": "studenthub-470de",
+    "storage_bucket": "studenthub-470de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469997125718:android:3e4c1dd409b56f94147bf7",
+        "android_client_info": {
+          "package_name": "com.mvukosav.studenthub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469997125718-01qgh05qcqjseokn97tuqrdli2nliakp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm8WYBEBY_KeZCXNul8zPqK16EPDzZcTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469997125718-01qgh05qcqjseokn97tuqrdli2nliakp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

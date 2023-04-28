@@ -3,6 +3,8 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'com.google.dagger.hilt.android'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
 }
 
 android {
@@ -38,7 +40,8 @@ android {
 }
 
 dependencies {
-def lifecycle_version = "2.5.1"
+implementation 'com.google.firebase:firebase-crashlytics-ktx:18.2.9'
+    def lifecycle_version = "2.5.1"
 def lifecycle_extension = "2.2.0"
 
 implementation 'androidx.core:core-ktx:1.7.0'
