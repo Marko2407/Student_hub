@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10dp">
+
+    <ImageButton
+        android:id="@+id/remove_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:src="@drawable/remove_ic" />
+
+    <TextView
+        android:id="@+id/meal_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/inter_semi_bold"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:text="1"
+        android:textColor="@color/dark_grey_primary"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/add_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:src="@drawable/add_ic" />
+
+</LinearLayout>

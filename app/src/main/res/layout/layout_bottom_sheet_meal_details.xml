@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:background="@drawable/bottom_sheet_background"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/meal_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/chicken_food"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/meal_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="@font/inter_medium"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp"
+        android:textColor="@color/dark_grey_primary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/meal_image"
+        tools:text="Chicken breast marinade in olive oil" />
+
+    <TextView
+        android:id="@+id/meal_description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="@font/inter_regular"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/dark_grey_primary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/meal_name"
+        tools:text="• Chicken with hame and pasta with broccoli \n• Clear soup\n• Salad\n• Cake" />
+
+    <TextView
+        android:id="@+id/meal_weight"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="@font/inter_medium"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/meal_description"
+        tools:text="Weight: 120g" />
+
+    <TextView
+        android:id="@+id/meal_nutrition"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="@font/inter_medium"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/meal_weight"
+        tools:text="Nutrition: 850 kcal, 40g proteins, 2g salt, 3.57 g fat, 0,0114 B2." />
+
+    <TextView
+        android:id="@+id/meal_allergens"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="@font/inter_medium"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/meal_nutrition"
+        tools:text="Allergens: peanuts, wheat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <View
+        android:id="@+id/horizontal_upper_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_grey_primary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/transparent"
+        android:fontFamily="@font/inter_medium"
+        android:shadowColor="@color/dark_grey_primary"
+        android:stateListAnimator="@null"
+        android:text="Log out"
+        android:textColor="@color/dark_grey_primary"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/horizontal_bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_grey_primary" />
+
+    <TextView
+        android:id="@+id/txt_app_version"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="center"
+        android:paddingVertical="20dp"
+        android:paddingTop="10dp"
+        android:text="App Version - V1.0.0."
+        android:textColor="@color/dark_grey_primary"
+        android:textSize="12sp" />
+
+</LinearLayout>

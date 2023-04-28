@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.StudentHub" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowBackground">@color/main_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/dark_grey_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/dark_grey_primary</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.StudentHub.Menza" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimaryVariant">@color/cherry_red</item>
+        <item name="colorOnPrimary">@color/main_background</item>
+        <item name="colorOnSecondary">@color/dark_grey_primary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/cherry_red</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="Theme.StudentHub.Home" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimaryVariant">@color/baby_blue</item>
+        <item name="colorOnPrimary">@color/main_background</item>
+        <item name="colorOnSecondary">@color/dark_grey_primary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/baby_blue</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/CustomTabTextAppearance</item>
+        <item name="tabPaddingTop">10dp</item>
+        <item name="tabMinWidth">120dp</item>
+    </style>
+
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="FloatingActionButtonStyle" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/FabShapeStyleRectangle</item>
+    </style>
+
+    <style name="FabShapeStyleRectangle" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">4dp</item>
+    </style>
+
+</resources>
