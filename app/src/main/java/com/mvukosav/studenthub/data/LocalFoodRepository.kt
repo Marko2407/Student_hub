@@ -1,5 +1,6 @@
 package com.mvukosav.studenthub.data
 
+import android.util.Log
 import com.mvukosav.studenthub.data.foodData.DemoQueries
 import com.mvukosav.studenthub.data.foodData.calculateTotalFoodNutritionOfSelectedMealInDay
 import com.mvukosav.studenthub.data.foodData.calculateTotalFoodNutritionOfSelectedMealPerDayType
@@ -59,7 +60,7 @@ class LocalFoodRepository @Inject constructor() : FoodRepository {
     }
 
     override fun updateMealAmount(mealId: Int, amount: Int): List<DailySelectedMeal> {
-        var dailySelected = selectedDailyMenu
+        var dailySelected = selectedDailyMenu.sortedBy { it.dayType.ordinal }
         val selectedByDate = dailySelected.filter { it.date == selectedDate }
         var meal: SelectedMeal? = null
         selectedByDate.forEach {
@@ -69,16 +70,16 @@ class LocalFoodRepository @Inject constructor() : FoodRepository {
                 }
             }
         }
-
         if (meal != null) {
             meal!!.mealAmount += amount
             if (meal!!.mealAmount == 0) {
-                getMealById(mealId)?.isMealSelected = false
                 selectedMeals.removeIf { it.meal.mealId == mealId }
+                getMealById(mealId)?.isMealSelected = false
                 dailySelected = getSelectedMeals(selectedDate).toMutableList()
             }
         }
-
+        Log.d("MEAL", meal.toString())
+        Log.d("MEAL_D", dailySelected.toString())
         return dailySelected
     }
 

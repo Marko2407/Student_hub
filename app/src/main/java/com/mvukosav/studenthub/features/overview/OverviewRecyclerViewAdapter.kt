@@ -15,7 +15,7 @@ class OverviewRecyclerViewAdapter(
     private val mealClickListener: OnOverviewMealClickListener,
 ) :
     RecyclerView.Adapter<OverviewViewHolder>() {
-    private var dailyMenu: List<DailySelectedMeal> = mutableListOf()
+    private var dailyMenu: List<DailySelectedMeal> = listOf()
     private val layoutInflater: LayoutInflater = LayoutInflater.from(context)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OverviewViewHolder {
@@ -35,6 +35,7 @@ class OverviewRecyclerViewAdapter(
         val diffResult = DiffUtil.calculateDiff(diffCallback)
 
         this.dailyMenu = newDaily
+        notifyDataSetChanged()
         diffResult.dispatchUpdatesTo(this)
     }
 
@@ -75,7 +76,7 @@ class SelectedFoodDiffCallback(
     override fun getNewListSize(): Int = newItem.size
 
     override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean =
-        oldItem[oldItemPosition].dayType == newItem[newItemPosition].dayType
+        oldItem[oldItemPosition] == newItem[newItemPosition]
 
     override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean =
         oldItem[oldItemPosition] == newItem[newItemPosition]
