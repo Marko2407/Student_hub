@@ -47,7 +47,7 @@ class SplashActivity : AppCompatActivity() {
 
     private fun openMainScreen() {
         startActivity(MainActivity.createIntent(this))
-        overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+       // overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
         finishAfterTransition()
     }
 
